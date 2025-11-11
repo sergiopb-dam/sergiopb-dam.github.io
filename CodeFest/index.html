@@ -2,39 +2,80 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <title>CodeFest - Festival de Música y Tecnología</title>
+    <meta charset="UTF-8">
+    <title>Entradas - CodeFest 2025</title>
+    <link rel="stylesheet" href="css/estilos.css"> <!-- Opcional, si quieres mantener mismo estilo -->
 </head>
 
 <body>
-    <h1>CodeFest 2025</h1>
-    <h2>Festival de Música y Tecnología</h2>
-    <p>CodeFest es el punto de encuentro donde la creatividad musical se une con la innovación tecnológica. Un evento
-        lleno de energía, aprendizaje y diversión.</p>
 
+    <header>
+        <h1>CodeFest 2025</h1>
+        <h2>Donde la Música y el Código se encuentran</h2>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="web/cartel.html">Cartel</a></li>
+                <li><a href="web/localizacion.html">Localización</a></li>
+                <li><a href="web/entradas.html">Entradas</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h3>Actividades Destacadas</h3>
-    <ul>
-        <li>Conciertos en vivo con artistas digitales</li>
-        <li>Talleres de programación creativa y arte generativo</li>
-        <li>Zona de exposición con startups tecnológicas</li>
-        <li>Charlas inspiradoras con expertos del sector</li>
-    </ul>
+    <main>
+        <h2>Formulario de Pre-registro de Entradas</h2>
+        <form action="https://www.w3schools.com/action_page.php" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos"><br><br>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
 
-    <h3>Información General</h3>
-    <ul>
-        <li><strong>Fechas:</strong> 20 al 22 de septiembre de 2025</li>
-        <li><strong>Lugar:</strong> Centro de Innovación y Cultura Digital</li>
-        <li><strong>Entradas:</strong> A la venta próximamente</li>
-    </ul>
+            <fieldset>
+                <legend>Tipo de Entrada</legend>
+                <input type="radio" id="abono_general" name="tipo_entrada" value="abono_general">
+                <label for="abono_general">Abono General (3 Días)</label><br>
 
+                <input type="radio" id="abono_vip" name="tipo_entrada" value="abono_vip">
+                <label for="abono_vip">Abono VIP (3 Días)</label><br>
 
-    <h3>Únete a la revolución sonora</h3>
-    <p>Ven a vivir una experiencia única donde el código y la música se fusionan para crear algo extraordinario.</p>
+                <input type="radio" id="entrada_dia" name="tipo_entrada" value="entrada_dia">
+                <label for="entrada_dia">Entrada de Día</label>
+            </fieldset>
 
+            <fieldset>
+                <legend>Extras</legend>
+                <input type="checkbox" id="camping" name="extras" value="camping">
+                <label for="camping">Camping</label><br>
 
-    <p><a href="../index.html">Volver al inicio</a></p>
+                <input type="checkbox" id="merch" name="extras" value="merch">
+                <label for="merch">Pack Merchandising</label><br>
+
+                <input type="checkbox" id="talleres" name="extras" value="talleres">
+                <label for="talleres">Acceso a Talleres Tech</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Día (Solo si es Entrada de Día)</legend>
+                <label for="dia">Selecciona un día:</label>
+                <select id="dia" name="dia">
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 CodeFest. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 
 </html>

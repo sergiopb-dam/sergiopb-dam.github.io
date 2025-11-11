@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/form3/envio.php" enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>Información de contacto</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="correo" name="correo"><br>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="mensaje"></textarea>
+            <label for="image">Sube una imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*"><br>
+        </fieldset>
+        <button>Enviar</button>
+    </form>
+    <a href="../index.html">Página principal</a>
+
+</body>
+
+</html>
