@@ -235,3 +235,11 @@ button[type="submit"]:hover {
     background-color: #fff;
     /* Cambio drástico al pasar el ratón */
 }
+
+.festival-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
